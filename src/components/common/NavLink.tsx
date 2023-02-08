@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 type Props = {
   to: string;
-  noBorder?: boolean;
   children: any;
   className?: any;
+  noBorder?: boolean;
 };
 
 const NavLink = (props: Props) => (

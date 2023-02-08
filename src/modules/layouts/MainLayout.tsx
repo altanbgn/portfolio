@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import NavLink from '../../components/common/NavLink';
+import NavLink from '@/components/common/NavLink';
 
 const MainLayout = () => {
   return (

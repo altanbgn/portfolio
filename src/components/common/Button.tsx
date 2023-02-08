@@ -1,6 +1,6 @@
 type Props = {
-  className?: string;
   children: any;
+  className?: string;
   onClick?: any;
   inline?: boolean;
 };
@@ -10,8 +10,9 @@ const Button = (props: Props) => (
     onClick={props.onClick}
     className={`
       rounded-full px-10 py-4 font-bold text-white transition duration-200
-      hover:bg-teal-900
-      ${props.inline ? `border-2 border-teal-700 text-teal-700` : `bg-teal-700`}
+      ${props.inline
+        ? `border-2 border-cyan-500 text-cyan-500 hover:border-cyan-700 hover:text-cyan-700`
+        : `bg-cyan-500 hover:bg-cyan-700`}
       ${props.className}
     `}
   >
