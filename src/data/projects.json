@@ -8,8 +8,11 @@
     "links": {
       "website": "https://gamejolt.com/games/project-d/795658"
     },
-    "imgSrc": "/images/project-d.png",
-    "imgAlt": "Project D"
+    "backgroundColor": "#E5E7EB",
+    "image": {
+      "src": "/images/project-d.png",
+      "alt": "Project D"
+    }
   },
   {
     "path": "arctis-bot",
@@ -20,9 +23,11 @@
     "links": {
       "github": "https://github.com/altanbgn/arctis-bot"
     },
-    "imgSrc": "/images/arctis.png",
-    "imgAlt": "Arctis"
-
+    "backgroundColor": "#CFFAFE",
+    "image": {
+      "src": "/images/arctis.png",
+      "alt": "Arctis"
+    }
   },
   {
     "path": "deep-sleep",
@@ -34,7 +39,10 @@
       "github": "https://github.com/altanbgn/deep-sleep",
       "website": "https://deep-sleep-production.up.railway.app"
     },
-    "imgSrc": "/images/sleep.png",
-    "imgAlt": "Sleep"
+    "backgroundColor": "#F7E4E3",
+    "image": {
+      "src": "/images/deep-sleep.png",
+      "alt": "Deep Sleep"
+    }
   }
 ]

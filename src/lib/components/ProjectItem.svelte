@@ -1,20 +1,32 @@
 <script lang="ts">
 	import { fade } from "svelte/transition"
 	import { goto } from "$app/navigation"
+  import type { Project } from "$lib/types/index.svelte"
 
-	export let title = ""
-	export let imgSrc = ""
-	export let imgAlt = ""
-	export let className = ""
-	export let path = ""
+  export let item: Project = {
+    path: "",
+    title: "",
+    introduction: "",
+    description: "",
+    languages: [],
+    links: {
+      websites: "",
+      github: ""
+    },
+    backgroundColor: "",
+    image: {
+      src: "",
+      alt: ""
+    }
+  }
 
 	let hovered = false
 </script>
 
 <div
-	class="relative cursor-pointer min-h-[320px] md:min-h-[600px] rounded-[96px] overflow-hidden transition duration-300 hover:scale-95 {className}"
+	class="relative cursor-pointer w-full rounded-[4rem] overflow-hidden transition duration-300 hover:scale-95"
 	role="none"
-	on:click={() => goto("/products/" + path)}
+	on:click={() => goto("/products/" + item.path)}
 	on:mouseenter={() => window.innerWidth >= 768 && (hovered = true)}
 	on:mouseleave={() => window.innerWidth >= 768 && (hovered = false)}
 >
@@ -26,24 +38,27 @@
 			/>
 			<div
         transition:fade={{ duration: 300 }}
-        class="p-16"
+        class="px-16 py-8"
       >
-				<p class="text-3xl text-neutral-200 uppercase font-black mb-4 relative z-10">
-					{title}
+				<p class="text-3xl tracking-wider uppercase font-black mb-4 relative z-10">
+					{item.title}
 				</p>
 				<p
-					class="text-xl text-neutral-200 whitespace-normal overflow-hidden text-ellipsis relative z-10 mb-4"
+					class="text-xl whitespace-normal overflow-hidden tracking-wider text-ellipsis relative z-10 mb-4"
 				>
 					<slot />
 				</p>
 			</div>
 		</div>
 	{/if}
-	<div class="w-full h-[320px] md:h-[600px] flex justify-center items-center overflow-hidden bg-zinc-900" >
+	<div
+    class="w-full h-full flex justify-center items-center overflow-hidden"
+    style="background-color: {item.backgroundColor};"
+  >
 		<img
-			class="w-full h-full object-cover transition duration-300"
-			src={imgSrc}
-			alt={imgAlt}
+			class="h-96 object-contain transition duration-300"
+			src={item.image.src}
+			alt={item.image.alt}
 		/>
 	</div>
 </div>

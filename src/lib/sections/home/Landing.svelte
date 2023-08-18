@@ -20,7 +20,7 @@
 </script>
 
 <div
-	class="container flex flex-col md:flex-row justify-center items-center h-[calc(100vh-120px)] mx-auto mb-64 px-8 md:px-32 gap-10 md:gap-0"
+	class="container flex flex-col lg:flex-row justify-center items-center h-[calc(100vh-120px)] mx-auto px-8 lg:px-32 gap-10 lg:gap-0"
 >
 	<div
 		class="absolute -z-20 w-full h-screen top-0 left-0"
@@ -43,22 +43,22 @@
 	<div class="flex basis-4/6 flex-col items-start justify-center">
 		<p
 			style="opacity: {$titleTween};"
-			class="text-2xl md:text-4xl text-center md:text-left text-neutral-300 font-display font-extrabold tracking-widest uppercase"
+			class="text-2xl lg:text-4xl text-center lg:text-left text-neutral-200 font-display font-extrabold tracking-widest uppercase"
 		>
 			Hi, My name is <span
 				class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500"
 				>Altanbagana</span
 			>
 		</p>
-		<p style="opacity: {$subTitleTween};" class="text-sm text-center md:text-left md:text-2xl my-4">
+		<p style="opacity: {$subTitleTween};" class="text-sm text-center lg:text-left lg:text-2xl text-neutral-400 my-4">
 			I am a full stack developer with a strong passion for creating innovative and dynamic web
 			applications. <br />(I use vim btw)
 		</p>
 	</div>
-	<div class="flex order-first md:order-none basis-2/6 items-center justify-center">
+	<div class="flex order-first lg:order-none basis-2/6 items-center justify-center">
 		<img
 			style="transform: scale({$avatarSpring.x}, {$avatarSpring.y});"
-			class="h-auto bg-white rounded-full p-2 w-[180px] md:w-[300px]"
+			class="h-auto bg-white rounded-full p-2 w-[180px] lg:w-[300px]"
 			src="/images/avatar.png"
 			alt="Avatar"
 		/>

@@ -1,9 +1,15 @@
 <script lang="ts">
 	import Landing from "$lib/sections/home/Landing.svelte"
-	import AboutMe from "$lib/sections/home/AboutMe.svelte"
+	import About from "$lib/sections/home/About.svelte"
 	import Projects from "$lib/sections/home/Projects.svelte"
+  import Contact from "$lib/sections/home/Contact.svelte"
 </script>
 
+<svelte:head>
+  <title>Altanbagana - Portfolio</title>
+</svelte:head>
+
 <Landing />
-<AboutMe />
+<About />
 <Projects />
+<Contact />
