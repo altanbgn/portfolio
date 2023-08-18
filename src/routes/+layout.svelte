@@ -1,7 +1,8 @@
-<script>
-	import '../app.css';
+<script lang="ts">
+	import Menu from "$lib/sections/Menu.svelte"
+	import "../app.css"
 
-  console.log(`
+	console.log(`
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -40,35 +41,10 @@
     Feel free to checkout the source code of this website at https://github.com/altanbgn/portfolio
 
     Also, You can contact me on https://instagram.com/res0nan.ce or via altanbagana@pm.me
-  `);
+  `)
 </script>
 
 <body>
-  <nav class="top-0 z-10 flex w-screen items-center justify-center gap-10 my-4">
-    <a href="/" class="text-white font-bold rounded-full px-8 py-4">
-      <img src="avatar.png" width={64} height={64} alt="logo" />
-    </a>
-    <a href="/resume.pdf" class="text-white font-bold rounded-full px-8 py-4">
-      Blogs
-    </a>
-    <a href="/resume.pdf" class="text-white font-bold rounded-full px-8 py-4">
-      Buy me a coffee
-    </a>
-    <a
-      href="/resume.pdf"
-      class="bg-cyan-500 text-white font-bold rounded-full px-8 py-4"
-      target="_blank"
-      rel="noopener noreferrer"
-      >
-      Resume
-    </a>
-  </nav>
-  <slot />
-  <button
-    class="fixed bottom-10 right-10 hover:text-cyan-500 transition duration-300 cursor-pointer"
-    style="writing-mode: vertical-lr;"
-    on:click={() => navigator.clipboard.writeText('altanbagana@protonmail.com')}
-  >
-    altanbagana@protonmail.com
-  </button>
+	<Menu />
+	<slot />
 </body>

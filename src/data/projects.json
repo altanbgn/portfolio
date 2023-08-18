@@ -1,0 +1,40 @@
+[
+  {
+    "path": "project-d",
+    "title": "Project D",
+    "introduction": "Dead Cells and Path of Exile inspired dungeon crawler pixeled game that I created as a hobby using Unity and C# and soon to be released on Steam 😁",
+    "description": "Dead Cells and Path of Exile inspired dungeon crawler pixeled game that I created as a hobby using Unity and C# and soon to be released on Steam 😁",
+    "languages": ["C#", "Unity"],
+    "links": {
+      "website": "https://gamejolt.com/games/project-d/795658"
+    },
+    "imgSrc": "/images/project-d.png",
+    "imgAlt": "Project D"
+  },
+  {
+    "path": "arctis-bot",
+    "title": "Arctis Discord Bot",
+    "introduction": "Arctis is a Discord music bot that allows you to play music from YouTube and Spotify.",
+    "description": "Arctis is a Discord music bot that allows you to play music from YouTube and Spotify.",
+    "languages": ["NodeJS", "Javascript", "DiscordJS"],
+    "links": {
+      "github": "https://github.com/altanbgn/arctis-bot"
+    },
+    "imgSrc": "/images/arctis.png",
+    "imgAlt": "Arctis"
+
+  },
+  {
+    "path": "deep-sleep",
+    "title": "Deep Sleep",
+    "introduction": "A website that calculates exactly when should you wake up or sleep depending on your given time.",
+    "description": "A website that calculates exactly when should you wake up or sleep depending on your given time. ",
+    "languages": ["React", "NextJS", "Typescript", "TailwindCSS"],
+    "links": {
+      "github": "https://github.com/altanbgn/deep-sleep",
+      "website": "https://deep-sleep-production.up.railway.app"
+    },
+    "imgSrc": "/images/sleep.png",
+    "imgAlt": "Sleep"
+  }
+]
