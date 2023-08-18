@@ -34,7 +34,7 @@
 		<div class="absolute bottom-0 left-0 flex items-end w-full h-full z-10 pointer-events-none">
 			<div
 				transition:fade={{ duration: 300 }}
-				class="absolute -z-10 w-full h-full bottom-0 left-0 opacity-40 bg-black"
+				class="absolute -z-10 w-full h-full bottom-0 left-0 opacity-75 bg-black"
 			/>
 			<div
         transition:fade={{ duration: 300 }}

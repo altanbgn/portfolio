@@ -8,18 +8,18 @@
 </script>
 
 <!-- DESKTOP -->
-<nav class="hidden lg:flex top-0 z-10 w-screen items-center justify-center gap-10 my-4">
-	<a href="/" class="font-bold rounded-full px-8 py-4">
-		<img src="images/avatar.png" width={64} height={64} alt="logo" />
+<nav class="hidden lg:flex absolute top-0 z-10 w-screen items-center justify-center gap-10 my-10">
+	<a href="/" class="font-bold rounded-full">
+		<img class="bg-white rounded-full p-1" src="avatar.png" width={64} height={64} alt="logo" />
 	</a>
-	<a href="/blogs" class="font-bold rounded-full px-8 py-4"> Blogs </a>
-	<a href="/blogs" class="font-bold rounded-full px-8 py-4"> Blogs </a>
+	<a href="/blogs" class="font-bold rounded-full py-4"> Blogs </a>
+	<a href="/projects" class="font-bold rounded-full py-4"> Projects </a>
 </nav>
 
 <!-- MOBILE -->
-<nav class="flex lg:hidden top-0 z-10 w-screen items-center justify-between my-4">
+<nav class="flex lg:hidden absolute top-0 z-10 w-screen items-center justify-between my-4">
 	<a href="/" class="font-bold rounded-full px-8 py-4">
-		<img src="images/avatar.png" width={64} height={64} alt="logo" />
+		<img src="avatar.png" width={64} height={64} alt="logo" />
 	</a>
 	<button class="px-8 py-4" on:click={() => (isMenuOpen = true)}>
 		<Bars />
@@ -33,9 +33,9 @@
 	>
 		<div class="flex justify-between items-center w-full my-4 mb-10">
 			<a href="/" class="font-bold rounded-full py-4">
-				<img src="images/avatar.png" width={64} height={64} alt="logo" />
+				<img src="avatar.png" width={64} height={64} alt="logo" />
 			</a>
-			<button class="py-4" on:click={() => (isMenuOpen = false)}>
+			<button class="px-8 py-4" on:click={() => (isMenuOpen = false)}>
 				<Close />
 			</button>
 		</div>

@@ -19,23 +19,23 @@
 	<Heading>Contact</Heading>
 
 	<div class="w-full flex justify-center items-center gap-4 mb-4">
-		<Card classCustom="w-full">
-      <SubHeading classCustom="text-cyan-200">GET IN TOUCH!</SubHeading>
-			<p class="text-2xl lg:text-6xl text-cyan-200 leading-snug">
+		<Card className="w-full">
+      <SubHeading className="text-cyan-200">GET IN TOUCH!</SubHeading>
+			<p class="text-2xl lg:text-6xl text-cyan-200 lg:leading-tight">
 				Do you have a question, an idea, or a project you need help with?
 				<br />
 				Contact me!
 			</p>
 
       <div class="flex flex-wrap gap-4">
-        <Button classCustom="w-fit text-sm">
+        <Button className="w-fit text-sm">
           <Mail /> altanbagana@pm.me
         </Button>
-        <Social classCustom="hover:bg-neutral-800"><Github /></Social>
-        <Social classCustom="hover:bg-blue-800"><LinkedIn /></Social>
-        <Social classCustom="hover:bg-pink-700"><Instagram /></Social>
-        <Social classCustom="hover:bg-cyan-500"><Twitter /></Social>
-        <Social classCustom="hover:bg-yellow-400"><BuyMeACoffee /></Social>
+        <Social className="hover:bg-neutral-800"><Github /></Social>
+        <Social className="hover:bg-blue-800"><LinkedIn /></Social>
+        <Social className="hover:bg-pink-700"><Instagram /></Social>
+        <Social className="hover:bg-cyan-500"><Twitter /></Social>
+        <Social className="hover:bg-yellow-400"><BuyMeACoffee /></Social>
       </div>
 		</Card>
 	</div>
@@ -57,8 +57,8 @@
 		/>
 		<input
 			type="text"
-			name="name"
-			placeholder="Name"
+			name="subject"
+			placeholder="Subject"
 			autocomplete="off"
 			class="w-full rounded-[2rem] bg-neutral-800 outline-none border-none py-6 px-8"
 		/>

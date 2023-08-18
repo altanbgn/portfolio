@@ -10,7 +10,7 @@
     },
     "backgroundColor": "#E5E7EB",
     "image": {
-      "src": "/images/project-d.png",
+      "src": "project-d.png",
       "alt": "Project D"
     }
   },
@@ -25,7 +25,7 @@
     },
     "backgroundColor": "#CFFAFE",
     "image": {
-      "src": "/images/arctis.png",
+      "src": "arctis.png",
       "alt": "Arctis"
     }
   },
@@ -41,7 +41,7 @@
     },
     "backgroundColor": "#F7E4E3",
     "image": {
-      "src": "/images/deep-sleep.png",
+      "src": "deep-sleep.png",
       "alt": "Deep Sleep"
     }
   }

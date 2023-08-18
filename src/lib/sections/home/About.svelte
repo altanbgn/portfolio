@@ -4,23 +4,25 @@
 	import Card from "$lib/components/Card.svelte"
 	import SubHeading from "$lib/components/SubHeading.svelte"
 
-	import Wave from "$lib/icons/Wave.svelte"
+	import WaveTop from "$lib/icons/WaveTop.svelte"
+	import WaveBottom from "$lib/icons/WaveBottom.svelte"
 </script>
 
-<Wave classCustom="w-full" />
+<WaveTop />
 <div class="bg-neutral-900">
 	<Section>
 		<Heading>About</Heading>
 		<div class="flex flex-col lg:flex-row justify-between w-full gap-4 lg:gap-4">
-			<Card classCustom="lg:w-1/2 flex-col">
+			<Card className="lg:w-1/2 flex-col">
 				<SubHeading>More about myself</SubHeading>
 				<p class="text-base text-neutral-400 tracking-wider leading-relaxed">
 					Back in 2013, I decided to create my own video game server for a game called Minecraft.
 					(Legendary game btw) That's when I tumbled into the world of programming and the power of
 					linux.
 					<br /><br />
-					Fast-forward to today, I am self-taught software developer for 8 years now. Worked on many
-					projects for a start-up, a big company and most importantly for myself. 😊
+					Fast-forward to today, I am self-taught software developer and started working professionally
+					for 5 years now. Worked on many projects for a start-up, a big company and most importantly
+					for myself. 😊
 					<br /><br />
 					My main focus these days is about system design and architecture. Thinking about how to build
 					a system that is scalable, maintainable and reliable.
@@ -31,8 +33,8 @@
 					<br /><br />
 				</p>
 			</Card>
-			<Card classCustom="lg:w-1/2 flex-col">
-				<SubHeading classCustom="-mb-6">Languages</SubHeading>
+			<Card className="lg:w-1/2 flex-col">
+				<SubHeading className="-mb-6">Languages</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-HTML-333333?style=for-the-badge&logo=HTML5&logoColor=E34F26"
@@ -80,7 +82,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading classCustom="-mb-6">Technologies</SubHeading>
+				<SubHeading className="-mb-6">Technologies</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-React-333333?style=for-the-badge&logo=React&logoColor=61DAFB"
@@ -118,7 +120,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading classCustom="-mb-6">Database</SubHeading>
+				<SubHeading className="-mb-6">Database</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-MongoDB-333333?style=for-the-badge&logo=MongoDB&logoColor=47A248"
@@ -136,7 +138,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading classCustom="-mb-6">Environment</SubHeading>
+				<SubHeading className="-mb-6">Environment</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-Linux-333333?style=for-the-badge&logo=Linux&logoColor=FCC624"
@@ -177,8 +179,8 @@
 			</Card>
 		</div>
 	</Section>
-  <Wave classCustom="rotate-180" />
 </div>
+<WaveBottom />
 
 <style>
 	@media (min-width: 768px) {

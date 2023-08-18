@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let classCustom = ""
+  export let className = ""
 </script>
 
-<p class="tracking-widest uppercase {classCustom}"><slot /></p>
+<p class="tracking-widest uppercase {className}"><slot /></p>

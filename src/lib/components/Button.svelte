@@ -1,7 +1,7 @@
 <script lang="ts">
-  export let classCustom = ""
+  export let className = ""
 </script>
 
-<button class="bg-gradient-to-r from-cyan-400 to-pink-500 hover:scale-95 font-bold rounded-full transition-all duration-300 px-8 py-4 {classCustom}">
+<button class="bg-gradient-to-r from-cyan-400 to-pink-500 hover:scale-95 font-bold rounded-full transition-all duration-300 px-8 py-4 {className}">
 	<slot />
 </button>
