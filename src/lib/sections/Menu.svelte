@@ -16,7 +16,7 @@
 <nav
 	id="desktopNav"
 	class={`fixed hidden lg:flex justify-center items-center top-0 left-1/2 -translate-x-1/2 z-10 rounded-full gap-2 my-10 px-8 py-2
-    ${scrollY <= 100 ? "bg-none" : "bg-neutral-700/60"}
+    ${scrollY <= 100 ? "bg-none" : "bg-neutral-600/40"}
   backdrop-blur-xl transition duration-300`}
 >
 	<MenuItem>home</MenuItem>

@@ -12,7 +12,8 @@
   import Twitter from "$lib/icons/Twitter.svelte"
   import Github from "$lib/icons/Github.svelte"
   import LinkedIn from "$lib/icons/LinkedIn.svelte"
-  import BuyMeACoffee from "$lib/icons/BuyMeACoffee.svelte"
+  import YouTube from "$lib/icons/YouTube.svelte"
+  import Twitch from "$lib/icons/Twitch.svelte"
 </script>
 
 <Section>
@@ -31,11 +32,12 @@
         <Button className="w-fit text-sm">
           <Mail /> altanbagana@pm.me
         </Button>
-        <Social className="hover:bg-neutral-800"><Github /></Social>
-        <Social className="hover:bg-blue-800"><LinkedIn /></Social>
-        <Social className="hover:bg-pink-700"><Instagram /></Social>
-        <Social className="hover:bg-cyan-500"><Twitter /></Social>
-        <Social className="hover:bg-yellow-400"><BuyMeACoffee /></Social>
+        <Social href="https://www.github.com/altanbgn/" className="hover:bg-neutral-800"><Github /></Social>
+        <Social href="https://www.linkedin.com/in/altanbgn/" className="hover:bg-blue-800"><LinkedIn /></Social>
+        <Social href="https://www.youtube.com/altanbgn/" className="hover:bg-red-700"><YouTube /></Social>
+        <Social href="https://www.twitch.tv/altanbgn/"className="hover:bg-purple-800"><Twitch /></Social>
+        <Social href="https://www.instagram.com/altanbgn.me/" className="hover:bg-pink-700"><Instagram /></Social>
+        <Social href="https://www.twitter.com/altanbgn/"className="hover:bg-cyan-500"><Twitter /></Social>
       </div>
 		</Card>
 	</div>

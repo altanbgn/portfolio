@@ -6,7 +6,7 @@
 
 <a
   href={href}
-  class={`font-bold capitalize rounded-full px-6 py-2
+  class={`font-bold capitalize rounded-full hover:tracking-widest transition-all duration-300 px-6 py-2
     ${$page.url.pathname.includes(
       href.length !== 1
         ? href.slice(1, href.length)
@@ -14,7 +14,7 @@
           ? ""
           : "!"
     )
-      ? "bg-neutral-600"
+      ? "bg-cyan-500"
       : ""}
   `}
 >
