@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Menu from "$lib/sections/Menu.svelte"
+  import Footer from "$lib/sections/Footer.svelte"
 	import "../app.css"
 
 	console.log(`
@@ -47,4 +48,5 @@
 <body>
 	<Menu />
 	<slot />
+  <Footer />
 </body>

@@ -1,5 +1,9 @@
 <script lang="ts">
+  import { twMerge } from "tailwind-merge"
+
   export let className = ""
+
+  const originalClass = "tracking-widest uppercase {className}"
 </script>
 
-<p class="tracking-widest uppercase {className}"><slot /></p>
+<p class={twMerge(originalClass, className)}><slot /></p>

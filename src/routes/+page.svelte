@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Altanbagana - Portfolio</title>
+  <title>Home - Altanbagana</title>
 </svelte:head>
 
 <Landing />

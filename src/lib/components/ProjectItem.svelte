@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from "svelte/transition"
 	import { goto } from "$app/navigation"
-  import type { Project } from "$lib/types/index.svelte"
+  import type { Project } from "$lib/types/index.ts"
 
   export let item: Project = {
     path: "",
@@ -26,7 +26,7 @@
 <div
 	class="relative cursor-pointer w-full rounded-[4rem] overflow-hidden transition duration-300 hover:scale-95"
 	role="none"
-	on:click={() => goto("/products/" + item.path)}
+	on:click={() => goto("/projects/" + item.path)}
 	on:mouseenter={() => window.innerWidth >= 768 && (hovered = true)}
 	on:mouseleave={() => window.innerWidth >= 768 && (hovered = false)}
 >

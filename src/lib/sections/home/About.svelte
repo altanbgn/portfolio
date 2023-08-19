@@ -34,7 +34,7 @@
 				</p>
 			</Card>
 			<Card className="lg:w-1/2 flex-col">
-				<SubHeading className="-mb-6">Languages</SubHeading>
+				<SubHeading>Languages</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-HTML-333333?style=for-the-badge&logo=HTML5&logoColor=E34F26"
@@ -82,7 +82,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading className="-mb-6">Technologies</SubHeading>
+				<SubHeading className="mt-4">Technologies</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-React-333333?style=for-the-badge&logo=React&logoColor=61DAFB"
@@ -120,7 +120,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading className="-mb-6">Database</SubHeading>
+				<SubHeading className="mt-4">Database</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-MongoDB-333333?style=for-the-badge&logo=MongoDB&logoColor=47A248"
@@ -138,7 +138,7 @@
 						class="rounded-3xl"
 					/>
 				</div>
-				<SubHeading className="-mb-6">Environment</SubHeading>
+				<SubHeading className="mt-4">Environment</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-Linux-333333?style=for-the-badge&logo=Linux&logoColor=FCC624"
