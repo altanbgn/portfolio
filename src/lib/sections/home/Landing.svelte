@@ -56,7 +56,7 @@
 			class="text-sm lg:text-2xl text-center lg:text-left text-neutral-400 my-4"
 		>
 			I am a full stack developer with a strong passion for creating innovative and dynamic web
-			applications. <br />(I use vim btw)
+			applications. <br />(I use arch btw)
 		</p>
 	</div>
 	<div class="flex order-first lg:order-none lg:basis-2/6 items-center justify-center">
@@ -70,6 +70,6 @@
 </div>
 <!-- style="opacity: {$scrollIndicatorTween}" -->
 <ScrollIndicator
-	className="top-[calc(100vh-100px)] lg:top-[calc(100vh-200px)] left-1/2"
+	className="top-[calc(100vh-100px)] lg:top-[calc(100vh-200px)]"
   style="transform: translateX(50%);"
 />
