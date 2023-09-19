@@ -12,7 +12,7 @@
 	role="none"
 	on:click={() => goto("/blogs/" + item.slug)}
 >
-  <img src={item.featured_image} alt={item.title} width="720" height="480" />
+  <img class="mb-6" src={item.featured_image} alt={item.title} width="720" height="480" />
   <p class="text-2xl font-bold">{item.title}</p>
   <p class="line-clamp-3">{item.excerpt}</p>
   <p class="text-neutral-400">{dayjs(item.created_at).format("DD MMMM YYYY")}</p>

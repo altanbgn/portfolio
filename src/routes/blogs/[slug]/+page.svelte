@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { onMount } from "svelte"
+  import { writable } from "svelte/store"
 	import { marked } from "marked"
-	import { writable } from "svelte/store"
+  import dayjs from "dayjs"
   import { page } from "$app/stores"
 	import { supabase } from "$lib/supabaseClient"
   import type { Blog } from "$lib/types"
@@ -25,10 +26,13 @@
 </script>
 
 <div class="container px-6 lg:px-96 mx-auto my-32 lg:my-48">
-  <img src={!$loading ? $blog.featured_image : ""} alt="featured" class="mb-16" />
-	<p class="text-2xl lg:text-6xl text-center font-bold mb-16">{!$loading ? $blog?.title : "Loading..."}</p>
-	<div class="prose lg:prose-xl prose-invert prose-pre:bg-neutral-800 max-w-none text-white">
-    <!-- eslint-disable-next-line -->
-		{@html !$loading ? marked($blog?.body) : ""}
-	</div>
+  {#if !$loading}
+    <img src={!$loading ? $blog.featured_image : ""} alt="featured" class="mb-16" />
+    <p class="text-2xl lg:text-6xl text-center font-bold mb-16">{!$loading ? $blog?.title : ""}</p>
+    <p class="text-neutral-400 mb-16">{$blog?.created_at ? dayjs($blog?.created_at).format("DD MMMM YYYY"): ""}</p>
+    <div class="prose lg:prose-xl prose-invert prose-pre:bg-neutral-800 max-w-none text-white">
+      <!-- eslint-disable-next-line -->
+      {@html !$loading ? marked($blog?.body) : ""}
+    </div>
+  {/if}
 </div>
