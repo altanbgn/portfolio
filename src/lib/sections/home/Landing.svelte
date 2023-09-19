@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { tweened, spring } from "svelte/motion"
 	import { backIn } from "svelte/easing"
+  import avatar from "avatar.png"
 	import ScrollIndicator from "$lib/icons/ScrollIndicator.svelte"
 
 	const titleTween = tweened(0, { duration: 600, easing: backIn })
@@ -65,7 +66,7 @@
 			class="h-auto bg-white rounded-full p-2 w-[180px] lg:w-[300px]"
       width="180px"
       height="300px"
-			src="avatar.png"
+			src={avatar}
 			alt="Avatar"
 		/>
 	</div>

@@ -4,6 +4,7 @@
 	import Bars from "$lib/icons/Bars.svelte"
 	import Close from "$lib/icons/Close.svelte"
 	import MenuItem from "$lib/components/MenuItem.svelte"
+  import avatar from "avatar.png"
 
 	let isMenuOpen = false
 	let scrollY = 0
@@ -26,7 +27,7 @@
 <!-- MOBILE -->
 <nav class="flex lg:hidden absolute top-0 z-10 w-screen items-center justify-between my-4">
 	<a href="/" class="font-bold rounded-full px-8 py-4">
-		<img src="avatar.png" width={64} height={64} alt="logo" />
+		<img src={avatar} width={64} height={64} alt="logo" />
 	</a>
 	<button aria-label="menu" class="px-8 py-4" on:click={() => (isMenuOpen = true)}>
 		<Bars />
@@ -40,7 +41,7 @@
 	>
 		<div class="flex justify-between items-center w-full my-4 mb-10">
 			<a on:click={() => (isMenuOpen = false)} href="/" class="font-bold rounded-full py-4">
-				<img src="avatar.png" width={64} height={64} alt="logo" />
+        <img src={avatar} width={64} height={64} alt="logo" />
 			</a>
 			<button aria-label="menu" class="py-4 px-4 pr-0" on:click={() => (isMenuOpen = false)}>
 				<Close />
