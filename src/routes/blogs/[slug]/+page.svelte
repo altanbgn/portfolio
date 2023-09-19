@@ -18,7 +18,7 @@
 				.eq("slug", $page.params.slug)
 				.single()
 
-			blog.set(data)
+			blog.set(data as Blog)
 		} finally {
 			loading.set(false)
 		}

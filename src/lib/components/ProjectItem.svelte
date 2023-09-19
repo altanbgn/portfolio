@@ -4,20 +4,17 @@
   import type { Project } from "$lib/types/index.ts"
 
   export let item: Project = {
-    path: "",
     title: "",
-    introduction: "",
-    description: "",
+    excerpt: "",
+    body: "",
+    slug: "",
     languages: [],
     links: {
       websites: "",
       github: ""
     },
-    backgroundColor: "",
-    image: {
-      src: "",
-      alt: ""
-    }
+    background_color: "",
+    featured_image: ""
   }
 
 	let hovered = false
@@ -26,7 +23,7 @@
 <div
 	class="relative cursor-pointer w-full rounded-[4rem] overflow-hidden transition duration-300 hover:scale-95"
 	role="none"
-	on:click={() => goto("/projects/" + item.path)}
+	on:click={() => goto("/projects/" + item.slug)}
 	on:mouseenter={() => window.innerWidth >= 768 && (hovered = true)}
 	on:mouseleave={() => window.innerWidth >= 768 && (hovered = false)}
 >
@@ -53,12 +50,12 @@
 	{/if}
 	<div
     class="w-full h-full flex justify-center items-center overflow-hidden"
-    style="background-color: {item.backgroundColor};"
+    style="background-color: {item.background_color};"
   >
 		<img
 			class="h-96 object-contain transition duration-300"
-			src={item.image.src}
-			alt={item.image.alt}
+			src={item.featured_image}
+			alt={item.title}
       width="632"
       height="384"
 		/>

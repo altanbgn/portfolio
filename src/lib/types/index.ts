@@ -1,18 +1,15 @@
 export type Project = {
-  path: string,
   title: string,
-  introduction: string,
-  description: string,
+  excerpt: string,
+  body: string,
+  slug: string,
   languages: Array<string>,
   links: {
     websites?: string,
     github?: string
   }
-  backgroundColor: string,
-  image: {
-    src: string,
-    alt: string
-  }
+  background_color: string,
+  featured_image: string,
 }
 
 export type Blog = {

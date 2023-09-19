@@ -30,7 +30,7 @@
         href="https://supabase.com"
       >
 				Supabase
-			</a>. Deployed with
+			</a>. Deployed on
 			<a
         class={linkClasses}
         target="_blank"
