@@ -4,7 +4,6 @@
 	import { writable } from "svelte/store"
   import { page } from "$app/stores"
 	import { supabase } from "$lib/supabaseClient"
-  // import lazyLoad from "$lib/lazyLoad"
   import type { Blog } from "$lib/types"
 
 	const blog = writable<Blog>()

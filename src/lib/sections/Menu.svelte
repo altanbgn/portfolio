@@ -28,7 +28,7 @@
 	<a href="/" class="font-bold rounded-full px-8 py-4">
 		<img src="avatar.png" width={64} height={64} alt="logo" />
 	</a>
-	<button class="px-8 py-4" on:click={() => (isMenuOpen = true)}>
+	<button aria-label="menu" class="px-8 py-4" on:click={() => (isMenuOpen = true)}>
 		<Bars />
 	</button>
 </nav>
