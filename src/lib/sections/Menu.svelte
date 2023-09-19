@@ -42,7 +42,7 @@
 			<a on:click={() => (isMenuOpen = false)} href="/" class="font-bold rounded-full py-4">
 				<img src="avatar.png" width={64} height={64} alt="logo" />
 			</a>
-			<button class="py-4 px-4 pr-0" on:click={() => (isMenuOpen = false)}>
+			<button aria-label="menu" class="py-4 px-4 pr-0" on:click={() => (isMenuOpen = false)}>
 				<Close />
 			</button>
 		</div>

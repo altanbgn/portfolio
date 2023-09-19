@@ -1,5 +1,5 @@
 <script lang="ts">
-	const linkClasses = "text-blue-500 hover:text-blue-700 hover:underline"
+	const linkClasses = "text-blue-400 hover:text-blue-300 hover:underline"
 </script>
 
 <div class="bg-neutral-800 p-4">
