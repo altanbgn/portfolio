@@ -14,3 +14,14 @@ export type Project = {
     alt: string
   }
 }
+
+export type Blog = {
+  id: string
+  title: string
+  excerpt: string
+  body: string
+  featured_image: string
+  read_time: number
+  created_at: Date
+  slug: string
+}

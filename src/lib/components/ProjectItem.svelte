@@ -59,6 +59,8 @@
 			class="h-96 object-contain transition duration-300"
 			src={item.image.src}
 			alt={item.image.alt}
+      width="632"
+      height="384"
 		/>
 	</div>
 </div>

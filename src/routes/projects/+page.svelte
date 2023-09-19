@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Landing from "$lib/sections/blogs/Landing.svelte";
+  import Landing from "$lib/sections/projects/Landing.svelte"
 </script>
 
 <svelte:head>
-  <title>Blogs - Altanbagana</title>
+  <title>Projects - Altanbagana</title>
 </svelte:head>
 
 <Landing />

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { page } from "$app/stores"
 	import { fly } from "svelte/transition"
 	import { quintInOut } from "svelte/easing"
 	import Bars from "$lib/icons/Bars.svelte"
@@ -22,7 +21,6 @@
 	<MenuItem>home</MenuItem>
 	<MenuItem href="/blogs">blogs</MenuItem>
 	<MenuItem href="/projects">projects</MenuItem>
-	<MenuItem href="/courses">courses</MenuItem>
 </nav>
 
 <!-- MOBILE -->
@@ -41,7 +39,7 @@
 		transition:fly={{ duration: 1200, x: window.innerWidth, opacity: 1, easing: quintInOut }}
 	>
 		<div class="flex justify-between items-center w-full my-4 mb-10">
-			<a on:click={() => isMenuOpen = false} href="/" class="font-bold rounded-full py-4">
+			<a on:click={() => (isMenuOpen = false)} href="/" class="font-bold rounded-full py-4">
 				<img src="avatar.png" width={64} height={64} alt="logo" />
 			</a>
 			<button class="py-4 px-4 pr-0" on:click={() => (isMenuOpen = false)}>
@@ -49,9 +47,20 @@
 			</button>
 		</div>
 		<div class="flex flex-col gap-10">
-			<a on:click={() => isMenuOpen = false} href="/blogs" class="text-4xl uppercase font-secondary font-extrabold"> Blogs </a>
-			<a on:click={() => isMenuOpen = false} href="/projects" class="text-4xl uppercase font-secondary font-extrabold"> Projects </a>
-			<a on:click={() => isMenuOpen = false} href="/courses" class="text-4xl uppercase font-secondary font-extrabold"> Courses </a>
+			<a
+				on:click={() => (isMenuOpen = false)}
+				href="/blogs"
+				class="text-4xl uppercase font-secondary font-extrabold"
+			>
+				Blogs
+			</a>
+			<a
+				on:click={() => (isMenuOpen = false)}
+				href="/projects"
+				class="text-4xl uppercase font-secondary font-extrabold"
+			>
+				Projects
+			</a>
 		</div>
 	</div>
 {/if}
