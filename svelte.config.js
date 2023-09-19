@@ -18,7 +18,8 @@ const config = {
       polyfill: true,
     }),
     alias: {
-      "$data": "./src/data/*"
+      "$data": "./src/data/*",
+      "$static": "./static/*"
     }
   }
 }

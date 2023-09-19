@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { tweened, spring } from "svelte/motion"
 	import { backIn } from "svelte/easing"
-  import avatar from "avatar.png"
+  import avatar from "$static/avatar.png"
 	import ScrollIndicator from "$lib/icons/ScrollIndicator.svelte"
 
 	const titleTween = tweened(0, { duration: 600, easing: backIn })
