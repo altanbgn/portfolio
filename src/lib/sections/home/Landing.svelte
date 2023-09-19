@@ -63,6 +63,8 @@
 		<img
 			style="transform: scale({$avatarSpring.x}, {$avatarSpring.y});"
 			class="h-auto bg-white rounded-full p-2 w-[180px] lg:w-[300px]"
+      width="180"
+      height="300"
 			src="avatar.png"
 			alt="Avatar"
 		/>
