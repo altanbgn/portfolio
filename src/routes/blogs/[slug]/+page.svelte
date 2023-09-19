@@ -29,6 +29,7 @@
   <img use:lazyLoad={!$loading ? $blog.featured_image : ""} alt="featured" class="mb-16" />
 	<p class="text-2xl lg:text-6xl text-center font-bold mb-16">{!$loading ? $blog?.title : "Loading..."}</p>
 	<div class="prose lg:prose-xl prose-invert prose-pre:bg-neutral-800 max-w-none text-white">
+    <!-- hello? -->
     <!-- eslint-disable-next-line -->
 		{@html !$loading ? marked($blog?.body) : ""}
 	</div>
