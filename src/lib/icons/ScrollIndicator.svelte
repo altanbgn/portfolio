@@ -1,8 +1,10 @@
 <script lang="ts">
   import { twMerge } from "tailwind-merge"
 
-	export let className = ""
+	let className = ""
+
   export let style = ""
+  export { className as class }
 
   const originalClass = "feather feather-chevrons-down scroll-indicator absolute left-1/2"
 </script>

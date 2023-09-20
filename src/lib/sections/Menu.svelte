@@ -4,7 +4,7 @@
 	import Bars from "$lib/icons/Bars.svelte"
 	import Close from "$lib/icons/Close.svelte"
 	import MenuItem from "$lib/components/MenuItem.svelte"
-  import avatar from "$static/avatar.png"
+  import avatar from "$assets/avatar.png"
 
 	let isMenuOpen = false
 	let scrollY = 0

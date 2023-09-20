@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { tweened, spring } from "svelte/motion"
 	import { backIn } from "svelte/easing"
-  import avatar from "$static/avatar.png"
+  import avatar from "$assets/avatar.png"
 	import ScrollIndicator from "$lib/icons/ScrollIndicator.svelte"
 
 	const titleTween = tweened(0, { duration: 600, easing: backIn })
@@ -71,8 +71,8 @@
 		/>
 	</div>
 </div>
-<!-- style="opacity: {$scrollIndicatorTween}" -->
+
 <ScrollIndicator
-	className="top-[calc(100vh-100px)] lg:top-[calc(100vh-200px)]"
+	class="top-[calc(100vh-100px)] lg:top-[calc(100vh-200px)]"
   style="transform: translateX(50%);"
 />

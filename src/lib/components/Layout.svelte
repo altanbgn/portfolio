@@ -4,9 +4,9 @@
   let className = ""
   export { className as class }
 
-  const originalClass = "container flex flex-col justify-center items-center h-auto mx-auto px-8 lg:px-32 py-16 lg:py-32"
+  let originalClass = "container mx-auto px-8 lg:px-32 my-32 lg:my-48"
 </script>
 
 <div class={twMerge(originalClass, className)}>
-	<slot />
+  <slot />
 </div>

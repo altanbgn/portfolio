@@ -33,5 +33,5 @@
       {/each}
     {/if}
 	</div>
-  <Button className="mt-10"> + More </Button>
+  <Button class="mt-10"> + More </Button>
 </Section>

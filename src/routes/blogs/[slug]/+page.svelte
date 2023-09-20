@@ -5,6 +5,7 @@
   import dayjs from "dayjs"
   import { page } from "$app/stores"
 	import { supabase } from "$lib/supabaseClient"
+  import Layout from "$lib/components/Layout.svelte"
   import type { Blog } from "$lib/types"
 
 	const blog = writable<Blog>()
@@ -25,7 +26,7 @@
 	})
 </script>
 
-<div class="container px-6 lg:px-96 mx-auto my-32 lg:my-48">
+<Layout class="lg:px-96">
   {#if !$loading}
     <img src={!$loading ? $blog.featured_image : ""} alt="featured" class="mb-16" />
     <p class="text-2xl lg:text-6xl text-center font-bold mb-16">{!$loading ? $blog?.title : ""}</p>
@@ -35,4 +36,4 @@
       {@html !$loading ? marked($blog?.body) : ""}
     </div>
   {/if}
-</div>
+</Layout>

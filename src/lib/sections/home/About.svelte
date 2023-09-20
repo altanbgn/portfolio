@@ -13,7 +13,7 @@
 	<Section>
 		<Heading>About</Heading>
 		<div class="flex flex-col lg:flex-row justify-between w-full gap-4 lg:gap-4">
-			<Card className="lg:w-1/2 flex-col">
+			<Card class="lg:w-1/2 flex-col">
 				<SubHeading>More about myself</SubHeading>
 				<p class="text-base text-neutral-400 tracking-wider leading-relaxed">
 					Back in 2013, I decided to create my own video game server for a game called Minecraft.
@@ -33,7 +33,7 @@
 					<br /><br />
 				</p>
 			</Card>
-			<Card className="lg:w-1/2 flex-col">
+			<Card class="lg:w-1/2 flex-col">
 				<SubHeading>Languages</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
@@ -100,7 +100,7 @@
             height="34"
           />
 				</div>
-				<SubHeading className="mt-4">Technologies</SubHeading>
+				<SubHeading class="mt-4">Technologies</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-React-333333?style=for-the-badge&logo=React&logoColor=61DAFB"
@@ -152,7 +152,7 @@
             height="34"
 					/>
 				</div>
-				<SubHeading className="mt-4">Database</SubHeading>
+				<SubHeading class="mt-4">Database</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-MongoDB-333333?style=for-the-badge&logo=MongoDB&logoColor=47A248"
@@ -176,7 +176,7 @@
             height="34"
 					/>
 				</div>
-				<SubHeading className="mt-4">Environment</SubHeading>
+				<SubHeading class="mt-4">Environment</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
 						src="https://img.shields.io/badge/-Linux-333333?style=for-the-badge&logo=Linux&logoColor=FCC624"

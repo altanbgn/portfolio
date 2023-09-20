@@ -3,7 +3,7 @@
   import { goto } from "$app/navigation"
   import type { Blog } from "$lib/types/index.ts"
 
-  export let item: Blog;
+  export let item: Blog
 
 </script>
 

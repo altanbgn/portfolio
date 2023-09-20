@@ -3,9 +3,9 @@ export type Project = {
   excerpt: string,
   body: string,
   slug: string,
-  languages: Array<string>,
+  technologies: Array<string>,
   links: {
-    websites?: string,
+    website?: string,
     github?: string
   }
   background_color: string,

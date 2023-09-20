@@ -19,7 +19,7 @@ const config = {
     }),
     alias: {
       "$data": "./src/data/*",
-      "$static": "./static/*"
+      "$assets": "./src/assets/*"
     }
   }
 }

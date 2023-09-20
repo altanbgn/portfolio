@@ -8,9 +8,9 @@
     excerpt: "",
     body: "",
     slug: "",
-    languages: [],
+    technologies: [],
     links: {
-      websites: "",
+      website: "",
       github: ""
     },
     background_color: "",
@@ -41,9 +41,9 @@
 					{item.title}
 				</p>
 				<p
-					class="text-xl whitespace-normal overflow-hidden tracking-wider text-ellipsis relative z-10 mb-4"
+					class="relative text-xl text-ellipsis line-clamp-3 whitespace-normal overflow-hidden tracking-wider z-10 mb-4"
 				>
-					<slot />
+          {item.body}
 				</p>
 			</div>
 		</div>
