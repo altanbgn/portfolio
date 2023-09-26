@@ -36,6 +36,11 @@
 				}
 			])
 
+      event.target.name.value = ""
+      event.target.email.value = ""
+      event.target.subject.value = ""
+      event.target.message.value = ""
+
 			if (response.status === 201 && !response.error) {
 				message.set("Thank you! I will get back to you soon.")
 				color.set("#4ade80")
