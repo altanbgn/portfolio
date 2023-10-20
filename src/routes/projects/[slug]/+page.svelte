@@ -27,9 +27,9 @@
   })
 </script>
 
-<Layout class="grid grid-cols-1 lg:grid-cols-2">
+<Layout class="grid grid-cols-1 lg:grid-cols-2 gap-20">
   {#if !$loading}
-    <img src={$project.featured_image || ""} alt="featured" class="mb-16" />
+    <img src={$project.featured_image || ""} alt="featured" class="rounded-3xl" />
     <div class="flex flex-col gap-8">
       <p class="text-2xl lg:text-3xl font-bold">{$project?.title || ""}</p>
       <p>{$project?.body || ""}</p>

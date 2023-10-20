@@ -4,7 +4,6 @@
   import type { Blog } from "$lib/types/index.ts"
 
   export let item: Blog
-
 </script>
 
 <div

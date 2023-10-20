@@ -53,7 +53,7 @@
     style="background-color: {item.background_color};"
   >
 		<img
-			class="h-96 object-contain transition duration-300"
+			class="h-96 object-contain object-center transition duration-300"
 			src={item.featured_image}
 			alt={item.title}
       width="632"

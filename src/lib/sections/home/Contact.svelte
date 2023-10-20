@@ -100,7 +100,7 @@
 	</div>
 
 	{#if $message}
-		<div class="w-full flex justify-between items-center rounded-[2rem] bg-neutral-800 py-6 px-8 mb-4">
+		<div class="w-full flex justify-between items-center rounded-[2rem] bg-neutral-600 py-6 px-8 mb-4">
 			<p class="font-bold tracking-wide" style="color: {$color};">{$message}</p>
 			<button on:click={handleClose}>
 				<Close />
