@@ -36,18 +36,18 @@
 				}
 			])
 
-      event.target.name.value = ""
-      event.target.email.value = ""
-      event.target.subject.value = ""
-      event.target.message.value = ""
+			event.target.name.value = ""
+			event.target.email.value = ""
+			event.target.subject.value = ""
+			event.target.message.value = ""
 
 			if (response.status === 201 && !response.error) {
 				message.set("Thank you! I will get back to you soon.")
 				color.set("#4ade80")
 			} else {
-        message.set("Something went wrong!")
-        color.set("#f87171")
-      }
+				message.set("Something went wrong!")
+				color.set("#f87171")
+			}
 		} catch {
 			message.set("Something went wrong!")
 			color.set("#f87171")
@@ -100,7 +100,9 @@
 	</div>
 
 	{#if $message}
-		<div class="w-full flex justify-between items-center rounded-[2rem] bg-neutral-600 py-6 px-8 mb-4">
+		<div
+			class="w-full flex justify-between items-center rounded-[2rem] bg-neutral-600 py-6 px-8 mb-4"
+		>
 			<p class="font-bold tracking-wide" style="color: {$color};">{$message}</p>
 			<button on:click={handleClose}>
 				<Close />

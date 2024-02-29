@@ -1,8 +1,10 @@
-<script lang="ts">
+<script>
+	import { onMount } from "svelte"
 	import { tweened, spring } from "svelte/motion"
 	import { backIn } from "svelte/easing"
-  import avatar from "$assets/avatar.webp"
+	import avatar from "$assets/avatar.webp"
 	import ScrollIndicator from "$lib/icons/ScrollIndicator.svelte"
+	import TypeWriter from "typewriter-effect/dist/core"
 
 	const titleTween = tweened(0, { duration: 600, easing: backIn })
 	const subTitleTween = tweened(0, { duration: 600, easing: backIn })
@@ -17,10 +19,22 @@
 		}
 	)
 
+	onMount(async () => {
+		const typewriter = new TypeWriter("#typewriter", {
+			strings: ["Software Engineer", "Musician", "Gamer", "Creator"],
+			autoStart: true,
+			loop: true,
+			delay: 75,
+			pauseFor: 2000
+		})
+
+		typewriter.start()
+	})
+
 	setTimeout(() => ($titleTween = 1), 400)
 	setTimeout(() => ($subTitleTween = 1), 1200)
 	setTimeout(() => avatarSpring.set({ x: 1, y: 1 }), 2400)
-  setTimeout(() => ($scrollIndicatorTween = 1), 3000)
+	setTimeout(() => ($scrollIndicatorTween = 1), 3000)
 </script>
 
 <div
@@ -53,19 +67,19 @@
 				Altanbagana
 			</span>
 		</p>
-		<p style="opacity: {$subTitleTween};"
+		<p
+			style="opacity: {$subTitleTween};"
 			class="text-sm lg:text-2xl text-center lg:text-left text-neutral-400 my-4"
 		>
-			I am a full stack developer with a strong passion for creating innovative and dynamic web
-			applications. <br />(I use arch btw)
+			I'm a <span class="text-cyan-500" id="typewriter" />
 		</p>
 	</div>
 	<div class="flex order-first lg:order-none lg:basis-2/6 items-center justify-center">
 		<img
 			style="transform: scale({$avatarSpring.x}, {$avatarSpring.y});"
 			class="h-auto bg-white rounded-full p-2 w-[180px] lg:w-[300px]"
-      width="180px"
-      height="300px"
+			width="180px"
+			height="300px"
 			src={avatar}
 			alt="Avatar"
 		/>
@@ -74,5 +88,5 @@
 
 <ScrollIndicator
 	class="top-[calc(100vh-100px)] lg:top-[calc(100vh-200px)]"
-  style="transform: translateX(50%);"
+	style="transform: translateX(50%);"
 />
