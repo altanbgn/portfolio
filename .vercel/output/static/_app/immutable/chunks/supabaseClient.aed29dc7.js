@@ -1,0 +1,1 @@
+import{a0 as s}from"./vendor.f17ea74c.js";const I="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2a3Nwb2lyem5uamRrZHpqaXhhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTIyNzU2MTYsImV4cCI6MjAwNzg1MTYxNn0.yo84neco8YrvAr7KCESBnIRbcqFibDXVDP2-438C2w4",i="https://lvkspoirznnjdkdzjixa.supabase.co",c=s(i,I,{db:{schema:"public"},auth:{persistSession:!1}});export{c as s};
