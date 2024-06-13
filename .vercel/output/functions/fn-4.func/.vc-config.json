@@ -1,9 +1,0 @@
-{
-	"runtime": "nodejs20.x",
-	"regions": [
-		"ap-east-1"
-	],
-	"handler": ".svelte-kit/vercel-tmp/index.js",
-	"launcherType": "Nodejs",
-	"experimentalResponseStreaming": true
-}
