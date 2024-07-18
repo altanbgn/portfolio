@@ -20,6 +20,13 @@ html, * {
   padding: 0;
 }
 
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;

@@ -51,15 +51,8 @@
 						height="34"
 					/>
 					<img
-						src="https://img.shields.io/badge/-Javascript-333333?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"
-						alt="JS"
-						class="rounded-3xl"
-						width="97"
-						height="34"
-					/>
-					<img
-						src="https://img.shields.io/badge/-Typescript-333333?style=for-the-badge&logo=TypeScript&logoColor=3178C6)"
-						alt="TS"
+						src="https://img.shields.io/badge/-JS/TS-333333?style=for-the-badge&logo=TypeScript&logoColor=3178C6"
+						alt="JS/TS"
 						class="rounded-3xl"
 						width="97"
 						height="34"
@@ -86,7 +79,7 @@
 						height="34"
 					/>
 					<img
-						src="https://img.shields.io/badge/-C++-333333?style=for-the-badge&logo=Cplusplus&logoColor=00599C"
+						src="https://img.shields.io/badge/-C/C++-333333?style=for-the-badge&logo=Cplusplus&logoColor=00599C"
 						alt="C++"
 						class="rounded-3xl"
 						width="97"
@@ -94,6 +87,13 @@
 					/>
 					<img
 						src="https://img.shields.io/badge/-C%23-333333?style=for-the-badge&logo=Csharp&logoColor=239120"
+						alt="Csharp"
+						class="rounded-3xl"
+						width="97"
+						height="34"
+					/>
+					<img
+						src="https://img.shields.io/badge/-Lua-333333?style=for-the-badge&logo=Lua&logoColor=3B82F6"
 						alt="Csharp"
 						class="rounded-3xl"
 						width="97"
@@ -161,16 +161,23 @@
 						width="97"
 						height="34"
 					/>
+          <img
+            src="https://img.shields.io/badge/-PostgreSQL-333333?style=for-the-badge&logo=PostgreSQL&logoColor=4169E1"
+            alt="PostgreSQL"
+            class="rounded-3xl"
+            width="97"
+            height="34"
+          />
 					<img
-						src="https://img.shields.io/badge/-MySQL-333333?style=for-the-badge&logo=MySQL&logoColor=4479A1"
-						alt="MySQL"
+						src="https://img.shields.io/badge/-Firebase-333333?style=for-the-badge&logo=Firebase&logoColor=DD2C00"
+						alt="Firebase"
 						class="rounded-3xl"
 						width="97"
 						height="34"
 					/>
 					<img
-						src="https://img.shields.io/badge/-PostgreSQL-333333?style=for-the-badge&logo=PostgreSQL&logoColor=4169E1"
-						alt="PostgreSQL"
+						src="https://img.shields.io/badge/-Supabase-333333?style=for-the-badge&logo=Supabase&logoColor=46DDA1"
+						alt="Supabase"
 						class="rounded-3xl"
 						width="97"
 						height="34"
@@ -179,22 +186,8 @@
 				<SubHeading class="mt-4">Environment</SubHeading>
 				<div class="skills flex flex-wrap gap-2">
 					<img
-						src="https://img.shields.io/badge/-Linux-333333?style=for-the-badge&logo=Linux&logoColor=FCC624"
-						alt="Linux"
-						class="rounded-3xl"
-						width="97"
-						height="34"
-					/>
-					<img
-						src="https://img.shields.io/badge/-Pop! OS-333333?style=for-the-badge&logo=Pop!_OS&logoColor=4169E1"
-						alt="PopOS"
-						class="rounded-3xl"
-						width="97"
-						height="34"
-					/>
-					<img
-						src="https://img.shields.io/badge/-Ubuntu-333333?style=for-the-badge&logo=Ubuntu&logoColor=E95420"
-						alt="Ubuntu"
+						src="https://img.shields.io/badge/-Arch Linux-333333?style=for-the-badge&logo=ArchLinux&logoColor=1793D1"
+						alt="Arch Linux"
 						class="rounded-3xl"
 						width="97"
 						height="34"

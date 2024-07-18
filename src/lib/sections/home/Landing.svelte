@@ -2,12 +2,14 @@
 	import { onMount } from "svelte"
 	import { tweened, spring } from "svelte/motion"
 	import { backIn } from "svelte/easing"
+  import TypeWriter from "typewriter-effect/dist/core"
 	import avatar from "$assets/avatar.webp"
+  import Button from "$lib/components/Button.svelte"
 	import ScrollIndicator from "$lib/icons/ScrollIndicator.svelte"
-	import TypeWriter from "typewriter-effect/dist/core"
 
 	const titleTween = tweened(0, { duration: 600, easing: backIn })
 	const subTitleTween = tweened(0, { duration: 600, easing: backIn })
+  const buttonTween = tweened(0, { duration: 600, easing: backIn })
 	const scrollIndicatorTween = tweened(0, { duration: 600, easing: backIn })
 
 	const avatarSpring = spring(
@@ -33,6 +35,7 @@
 
 	setTimeout(() => ($titleTween = 1), 400)
 	setTimeout(() => ($subTitleTween = 1), 1200)
+  setTimeout(() => ($buttonTween = 1), 2000)
 	setTimeout(() => avatarSpring.set({ x: 1, y: 1 }), 2400)
 	setTimeout(() => ($scrollIndicatorTween = 1), 3000)
 </script>
@@ -73,6 +76,9 @@
 		>
 			I'm a <span class="text-cyan-500" id="typewriter" />
 		</p>
+		<a href="/my-resume.pdf" style="opacity: {$buttonTween};" target="_blank" rel="noopener noreferrer">
+      <Button class="bg-cyan-500">Download my resume</Button>
+    </a>
 	</div>
 	<div class="flex order-first lg:order-none lg:basis-2/6 items-center justify-center">
 		<img

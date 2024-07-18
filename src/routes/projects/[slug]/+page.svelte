@@ -38,14 +38,13 @@
         {$project?.technologies?.join(", ") || ""}
       </p>
       <div class="flex flex-wrap items-center gap-4">
-        <p class="font-bold uppercase tracking-widest">Links : </p>
         {#if $project?.links?.github}
           <Social href={$project.links.github} class="hover:bg-neutral-800">
             <Github />
           </Social>
         {/if}
         {#if $project?.links?.website}
-          <Social href={$project.links.website} class="hover:bg-neutral-800">
+          <Social href={$project.links.website} class="hover:bg-neutral-800 ">
             <Web />
           </Social>
         {/if}
