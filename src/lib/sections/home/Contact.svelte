@@ -83,13 +83,13 @@
 				<Social href="https://www.linkedin.com/in/altanbgn/" class="hover:bg-blue-800">
 					<LinkedIn />
 				</Social>
-				<Social href="https://www.youtube.com/altanbgn/" class="hover:bg-red-700">
+				<Social href="https://www.youtube.com/@resxnance" class="hover:bg-red-700">
 					<YouTube />
 				</Social>
-				<Social href="https://www.twitch.tv/altanbgn/" class="hover:bg-purple-800">
+				<Social href="https://www.twitch.tv/resxnance_live/" class="hover:bg-purple-800">
 					<Twitch />
 				</Social>
-				<Social href="https://www.instagram.com/altanbgn.me/" class="hover:bg-pink-700">
+				<Social href="https://www.instagram.com/resxnancee/" class="hover:bg-pink-700">
 					<Instagram />
 				</Social>
 				<Social href="https://www.twitter.com/altanbgn/" class="hover:bg-cyan-500">
